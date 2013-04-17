@@ -1,0 +1,88 @@
+V "GNAT Lib v2009"
+M P W=b
+P SS ZX
+R nnnnnnvnnnnnnnnnnnnnvvvnnnnnnnnnnnnnvnnnnvnnnnvnvnnnnnnvnnnnnnnnnnnnnnv1+nnnnnn
+
+U triangle_tp1%b	triangle_tp1.adb	7bfc7ae8 NE OO SU KU
+W ada%s			ada.ads			ada.ali
+W ada.calendar.delays%s	a-caldel.adb		a-caldel.ali
+W ada.real_time%s	a-reatim.adb		a-reatim.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W graphique%s		graphique.adb		graphique.ali
+W system%s		system.ads		system.ali
+W system.parameters%s	s-parame.adb		s-parame.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+W system.task_info%s	s-tasinf.adb		s-tasinf.ali
+W system.tasking%s	s-taskin.adb		s-taskin.ali
+W system.tasking.stages%s  s-tassta.adb		s-tassta.ali
+
+D ada.ads		20090519112355 9c7dd3ea
+D a-calend.ads		20090519112250 19486c30
+D a-caldel.ads		20090519112249 c565f6eb
+D a-except.ads		20090519112305 b54b55de
+D a-finali.ads		20090519112309 bfd2ca79
+D a-filico.ads		20090519112308 4ff02a40
+D a-ioexce.ads		20090519112311 be0900a0
+D a-reatim.ads		20090519112319 7c462ab4
+D a-stream.ads		20090519112324 34aca5be
+D a-tags.ads		20090519112335 bfa07446
+D a-textio.ads		20090519112337 fe8af46e
+D a-unccon.ads		20090519112342 51e09df2
+D graphique.ads		20110907133710 ffc6becc
+D interfac.ads		20090519112459 a69cad5c
+D i-c.ads		20090519112452 bc3ef662
+D i-cstrea.ads		20090519112454 e1e064a9
+D system.ads		20090519112725 83f59500
+D s-atacco.ads		20090519112525 60789a20
+D s-crtl.ads		20090519112535 89a96a96
+D s-exctab.ads		20090519112537 4b7fd51d
+D s-ficobl.ads		20090519112540 8bb681e5
+D s-finimp.ads		20090519112541 90fd9896
+D s-finroo.ads		20090519112541 1408f9d1
+D s-linux.ads		20090519112554 ad070dbe
+D s-osinte.ads		20090519112558 9854f6ef
+D s-parame.ads		20090519112621 f32e56e9
+D s-secsta.ads		20090519112625 d2c357fb
+D s-soflin.ads		20090519112627 61e5c9e8
+D s-stache.ads		20090519112629 481f9e9d
+D s-stausa.ads		20090519112629 146a8ff1
+D s-stalib.ads		20090519112629 9cbc334a
+D s-stoele.ads		20090519112630 a4d57c26
+D s-stoele.adb		20090519112630 49ef69d7
+D s-stratt.ads		20090519112631 fef7c1da
+D s-tasinf.ads		20090519112639 268f0cd4
+D s-taspri.ads		20090519112642 5459bcd0
+D s-taprop.ads		20090519112637 25a7965c
+D s-taskin.ads		20090519112641 78c4deed
+D s-tassta.ads		20090519112643 71d2b71d
+D s-traent.ads		20090519112649 a66ef260
+D s-unstyp.ads		20090519112650 c0f9fae5
+D s-wchcon.ads		20090519112659 30c48dc1
+D triangle_tp1.adb	20110921114244 7ab0304a
+X 1 ada.ads
+16K9*Ada 19e8 43|1r17 2r16
+X 11 a-textio.ads
+51K13*Text_IO 509e16 43|1w21 2r20
+X 13 graphique.ads
+2K9*Graphique 24e14 43|1w6 2r5
+5U19*Creer_Fenetre 43|29r10
+14U19*Attendre_Fermeture_Fenetre 43|35r8
+17U19*Afficher_Point 43|18r9
+X 43 triangle_tp1.adb
+4U11*Triangle_Tp1 4b11 36l5 36t17
+5i4 XMAX{natural} 29r24
+6i4 YMAX{natural} 29r30
+7i4 X{natural} 15m10 18r25 20m9 20r14
+7i7 Y{natural} 16m10 18r27 23m9 23r14
+7i10 Dx{natural} 12m10 14r24 17r18 22r26 24r24
+7i14 Dy{natural} 13m10 14r21 21r24
+8f4 e{float} 14m10 21m9 21r14 22r20 24m9 24r14
+9T14 Bresenham 9d24 9d27 9d30 9d33 10b14 27l8 27t17 31r21
+9i24 X0{natural} 12r19 15r14
+9i27 Y0{natural} 13r19 16r14
+9i30 X1{natural} 12r16
+9i33 Y1{natural} 13r16
+17i10 I{integer}
+31t17 T{9T14}
+

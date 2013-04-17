@@ -1,0 +1,68 @@
+V "GNAT Lib v2009"
+M P W=b
+P SS ZX
+R nnnvnnnnnnnnnnnnnnnnnnvnnnnnvnnnnnnnnnnnnvnnnnnnnnnnnnnvnnnnnnnnnnnnnnnnnnnnn
+
+U erato_statique%b	erato_statique.adb	f0672fcb NE OO SU IL
+W ada%s			ada.ads			ada.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W system.concat_2%s	s-conca2.adb		s-conca2.ali
+W system.img_int%s	s-imgint.adb		s-imgint.ali
+
+D ada.ads		20090519112355 9c7dd3ea
+D a-except.ads		20090519112305 b54b55de
+D a-finali.ads		20090519112309 bfd2ca79
+D a-filico.ads		20090519112308 4ff02a40
+D a-ioexce.ads		20090519112311 be0900a0
+D a-stream.ads		20090519112324 34aca5be
+D a-tags.ads		20090519112335 bfa07446
+D a-textio.ads		20090519112337 fe8af46e
+D a-unccon.ads		20090519112342 51e09df2
+D erato_statique.adb	20111004060914 0eeddba5
+D interfac.ads		20090519112459 a69cad5c
+D i-cstrea.ads		20090519112454 e1e064a9
+D system.ads		20090519112725 83f59500
+D s-conca2.ads		20090519112533 3d28f3da
+D s-crtl.ads		20090519112535 89a96a96
+D s-exctab.ads		20090519112537 4b7fd51d
+D s-ficobl.ads		20090519112540 8bb681e5
+D s-finimp.ads		20090519112541 90fd9896
+D s-finroo.ads		20090519112541 1408f9d1
+D s-imgint.ads		20090519112547 f77d133c
+D s-parame.ads		20090519112621 f32e56e9
+D s-secsta.ads		20090519112625 d2c357fb
+D s-soflin.ads		20090519112627 61e5c9e8
+D s-stache.ads		20090519112629 481f9e9d
+D s-stalib.ads		20090519112629 9cbc334a
+D s-stoele.ads		20090519112630 a4d57c26
+D s-stoele.adb		20090519112630 49ef69d7
+D s-stratt.ads		20090519112631 fef7c1da
+D s-traent.ads		20090519112649 a66ef260
+D s-unstyp.ads		20090519112650 c0f9fae5
+D s-wchcon.ads		20090519112659 30c48dc1
+X 1 ada.ads
+16K9*Ada 19e8 10|2r6 3r5
+X 8 a-textio.ads
+51K13*Text_IO 509e16 10|2w10 3r9
+245U14*Put 10|19r5
+X 10 erato_statique.adb
+5U11*erato_statique 5b11 61l5 61t19
+7R6 nb_premiers 8r30 10c6 13e11 29r21 35r21 56r28
+8P6 A_nb_premiers(7R6) 12r10 15r26 16r7 24r33 25r47 26r7 39r47 40r7 53r21
+11i3 n{natural} 19r25 43r20
+12p3 suiv{8P6} 20r16 31r16 32r16 35m9 44r18
+15U11 affiche 15b11 15>19 22l5 22t12 60r3
+15p19 L{8P6} 16r24
+16p3 p{8P6} 18r9 19r23 20m5 20r10
+24V10 ajouter_nb_premier{8P6} 24b10 24>29 24>48 37l5 37t23 50r8
+24p29 L{8P6} 26r23 36r10
+24i48 n{natural} 29r34 35r34
+26p3 p{8P6} 28r6 31r10 32m5 32r10 35r3
+39U11 filtrer 39b11 39>20 39=36 51l5 51t12 58r5
+39i20 n{natural} 43r8 50r29
+39p36 L{8P6} 40r24 50m3 50r27
+40p3 p{8P6} 42r9 43r14 44m7 44r12
+53p1 Liste_nb_premiers{8P6} 56m3 58m15 60r11
+57i7 i{integer} 58r13
+

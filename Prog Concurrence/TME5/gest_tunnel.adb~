@@ -1,0 +1,98 @@
+with Ada.text_io;
+use Ada.text_io;
+
+procedure Tunnel_une_voie is
+
+NB_TRAINS : constant natural := 15;
+NB_MAX : constant natural := 5;
+type signal is (open,closed);
+type T_TRAIN is (Ta,Tb);
+
+Protected Tunnel is
+	entry Entrer;
+	procedure Sortir;
+	entry 	Vide;
+	private 
+		nb_t:natural:=0;
+end Tunnel;
+
+Protected body Tunnel is
+	entry Entrer when nb_t<NB_MAX is
+	begin
+	nb_t:=nb_t+1;
+	end Entrer;
+	procedure Sortir is
+	begin
+	nb_t:=nb_t-1;
+	end Sortir;
+	entry Vide when nb_t=0 is 
+	begin
+		Put_Line("Le tunnel est vide.");
+	end Vide;
+end Tunnel;
+
+Protected type Mark is 
+	procedure Changer_Etat;
+	entry Demand_Entrer;
+	private 
+		Etat:signal:=closed;
+end Mark;
+protected body Mark is
+	procedure Changer_Etat is 
+	begin
+		if Etat=closed then 
+			Etat:=open;
+		else
+		Etat:=closed;
+		end if;
+	end Changer_Etat;
+	entry Demand_Entrer when Etat=open is
+	begin
+		null;
+	end Demand_Entrer;
+end Mark;
+
+Les_Marks:array(T_TRAIN) of Mark;
+
+task type TRAIN(typ:T_TRAIN) is 
+	entry Init(id:Positive);
+end TRAIN;
+task body TRAIN is
+	my_id:Positive;
+begin
+	accept Init(id:Positive) do
+		my_id:=id;
+	end Init;
+	Put_Line("Le train id: "&natural'image(my_id)&" demande entrer à tunnel.");
+	Les_Marks(typ).Demand_Entrer;
+	Tunnel.Entrer;
+	Put_Line("Le train id: "&natural'image(my_id)&" est entré à tunnel.");
+	Tunnel.Sortir;
+	Put_Line("Le train id: "&natural'image(my_id)&" est sorti à tunnel.");
+end TRAIN;
+task Gestion;
+task body Gestion is
+	sens:T_TRAIN:=Ta;
+begin
+	loop
+		Les_Marks(sens).Changer_Etat;
+		delay 0.1;
+		Les_Marks(sens).Changer_Etat;
+		Tunnel.Vide;
+		if sens= Ta then
+			sens:=Tb;
+		else
+			sens:=Ta;
+		end if;
+	end loop;
+end Gestion;
+
+TRAIN_A:array(1..NB_TRAINS) of TRAIN(Ta);
+TRAIN_B:array(1..NB_TRAINS) of TRAIN(Tb);
+
+begin
+	for i in 1..NB_TRAINS loop
+		TRAIN_A(i).Init(i);
+		TRAIN_B(i).Init(i);
+	end loop;	
+end Tunnel_une_voie;

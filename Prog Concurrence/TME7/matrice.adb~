@@ -1,0 +1,150 @@
+--Il n'y a pas de corrige sur ajout_1 et ajout_0, parce que j'ai pas bien compris le detail que la question demande
+--Tout les restes complets.
+
+with  Ada.Text_IO, Ada.Integer_Text_IO, Unchecked_Deallocation;
+use  Ada.Text_IO, Ada.Integer_Text_IO;
+package body Matrice is
+
+--procedure Unchecked_Deallocation(X : in out nome);
+procedure Desallouer is new Unchecked_Deallocation (Un_Element_De_Liste,Ptr_Element_De_Liste);
+
+function  Valeur(Matrice : Une_Matrice_Entiere; 
+                 Ligne   : Positive;
+                 Colonne : Positive) return Integer is
+	r_tete : Ptr_Element_De_Liste := Matrice.Tete(Ligne);
+begin
+	while r_tete.Colonne < Colonne loop
+		r_tete := r_tete.all.Prochain;
+	end loop;
+	if r_tete.Colonne = Colonne then
+		return r_tete.Donnee;
+	else
+		return 0;
+	end if;
+end Valeur; 
+
+procedure Valeur(Matrice : in out Une_Matrice_Entiere;
+                 Ligne   : in     Positive;
+                 Colonne : in     Positive;
+                 Valeur  : in     Integer) is
+	pred,ptr : Ptr_Element_De_Liste := null;
+	val : Integer :=0;-- Valeur(Matrice,Ligne,Colonne);
+begin
+	ptr := Matrice.Tete(Ligne);
+	while (ptr /= null) and then (ptr.all.Colonne < Colonne) loop
+		pred := ptr;
+		ptr := ptr.all.Prochain;
+	end loop;
+
+	if (Valeur = 0) and then (val /= 0) then --Supprimer
+		if Colonne = 1 then
+			Matrice.Tete(Ligne) := ptr.all.Prochain;
+		else
+			pred.all.Prochain := ptr.all.Prochain;
+		end if;
+		Desallouer(ptr);
+	else --Inserer
+		if Colonne = 1 then
+			Matrice.Tete(Ligne) := new Un_Element_De_Liste'(Matrice.Tete(Ligne),Colonne,Valeur);
+		else
+			pred.all.Prochain := new Un_Element_De_Liste'(ptr,Colonne,Valeur);
+		end if;
+	end if;
+end Valeur; 
+
+
+function "+"(Matrice1, Matrice2 : Une_Matrice_Entiere) 
+                                            return Une_Matrice_Entiere is 
+	Matrice_Resultat : Une_Matrice_Entiere(Lignes => Matrice1.Lignes, Colonnes => Matrice1.Colonnes);
+begin
+	for I in 1..Matrice1.Lignes loop
+		for J in 1..Matrice1.Colonnes loop
+			Valeur(Matrice_Resultat,I,J,Valeur(Matrice1,I,J)+Valeur(Matrice2,I,J));
+    		end loop;
+	end loop;
+	return Matrice_Resultat;
+end "+";
+
+function "*"(Matrice  : Une_Matrice_Entiere;
+             Scalaire : Integer) return Une_Matrice_Entiere is
+	Matrice_Resultat : Une_Matrice_Entiere(Lignes => Matrice.Lignes, Colonnes => Matrice.Colonnes);
+begin	
+	for I in 1..Matrice.Lignes loop
+		for J in 1..Matrice.Colonnes loop
+			Valeur(Matrice_Resultat,I,J,Scalaire*Valeur(Matrice,I,J));
+    		end loop;
+	end loop;
+	return Matrice_Resultat;
+end "*";
+
+function "*"(Scalaire : Integer;
+             Matrice  : Une_Matrice_Entiere) return Une_Matrice_Entiere is
+	Matrice_Resultat : Une_Matrice_Entiere(Lignes => Matrice.Lignes, Colonnes => Matrice.Colonnes);
+begin
+	for I in 1..Matrice.Lignes loop
+		for J in 1..Matrice.Colonnes loop
+			Valeur(Matrice_Resultat,I,J,Scalaire*Valeur(Matrice,I,J));
+    		end loop;
+	end loop;
+	return Matrice_Resultat;
+end "*";
+
+function "*"(Matrice1, Matrice2 : Une_Matrice_Entiere) 
+                                             return Une_Matrice_Entiere is
+	Matrice_Resultat : Une_Matrice_Entiere(Lignes => Matrice1.Lignes, Colonnes => Matrice2.Colonnes);
+	val : integer;
+begin
+	for I in 1..Matrice1.Lignes loop
+		for J in 1..Matrice2.Colonnes loop
+			val := 0;
+			for K in 1..Matrice1.Colonnes loop
+				val := val + Valeur(Matrice1,I,K) * Valeur(Matrice2,K,J);
+			end loop;
+			Valeur(Matrice_Resultat,I,J,val);
+    		end loop;
+	end loop;
+	return Matrice_Resultat;
+end "*";
+
+procedure Initialiser(Matrice: in out Une_Matrice_Entiere) is
+val : Integer;
+begin
+  for I in 1..Matrice.Lignes loop
+    for J in 1..Matrice.Colonnes loop
+      Put_Line("Saisie de l'element" & Positive'Image(I) & "," & Positive'Image(J));
+      Get(val);
+      Valeur(Matrice, I, J, val);
+    end loop;
+  end loop;
+end Initialiser;
+
+procedure Afficher_liste(Matrice : in Une_Matrice_Entiere) is
+ptr : Ptr_Element_De_Liste;
+begin
+  for I in 1 .. Matrice.Lignes loop
+	ptr := Matrice.Tete(I);
+    for J in 1 .. Matrice.Colonnes loop
+        if (ptr /= NULL) and then (ptr.all.Colonne = J) then
+	    Put(ptr.all.Donnee, Width => 7);
+	    ptr := ptr.all.Prochain;
+	else
+	    Put(0, Width => 7);
+	end if;
+    end loop;
+    New_Line;
+  end loop;
+  New_Line;
+end Afficher_liste;
+
+procedure Afficher(Matrice : in Une_Matrice_Entiere) is
+begin
+  for I in 1 .. Matrice.Lignes loop
+    for J in 1 .. Matrice.Colonnes loop
+	    Put(Valeur(Matrice,I,J), Width => 7);
+    end loop;
+    New_Line;
+  end loop;
+  New_Line;
+end Afficher;
+
+end Matrice;

@@ -1,0 +1,8 @@
+with graphique, ada.text_io;
+use graphique, ada.text_io;
+
+procedure triangle is
+	num := integer;
+	get(num);
+	put("le num = "&image'value(num));
+end triangle;    

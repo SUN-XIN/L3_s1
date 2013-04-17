@@ -1,0 +1,64 @@
+V "GNAT Lib v2009"
+M P W=b
+P SS ZX
+R nnnnnnnnnnnnnnnnnnnnnnvnnnnnnnnnnnnnnnvnnvnnnnnnnnnnnnnvnnnnnnnnnnnnnnnnnnnnn
+
+U test_addition%b	test_addition.adb	7d1d89b6 NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W matrice%s		matrice.adb		matrice.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+
+D ada.ads		20090519112355 9c7dd3ea
+D a-except.ads		20090519112305 b54b55de
+D a-finali.ads		20090519112309 bfd2ca79
+D a-filico.ads		20090519112308 4ff02a40
+D a-inteio.ads		20090519112309 03bc737c
+D a-ioexce.ads		20090519112311 be0900a0
+D a-stream.ads		20090519112324 34aca5be
+D a-tags.ads		20090519112335 bfa07446
+D a-textio.ads		20090519112337 fe8af46e
+D a-tiinio.ads		20090519112341 949a7272
+D a-unccon.ads		20090519112342 51e09df2
+D interfac.ads		20090519112459 a69cad5c
+D i-cstrea.ads		20090519112454 e1e064a9
+D matrice.ads		20111029131934 e1955fe6
+D system.ads		20090519112725 83f59500
+D s-crtl.ads		20090519112535 89a96a96
+D s-exctab.ads		20090519112537 4b7fd51d
+D s-ficobl.ads		20090519112540 8bb681e5
+D s-finimp.ads		20090519112541 90fd9896
+D s-finroo.ads		20090519112541 1408f9d1
+D s-parame.ads		20090519112621 f32e56e9
+D s-secsta.ads		20090519112625 d2c357fb
+D s-soflin.ads		20090519112627 61e5c9e8
+D s-stache.ads		20090519112629 481f9e9d
+D s-stalib.ads		20090519112629 9cbc334a
+D s-stoele.ads		20090519112630 a4d57c26
+D s-stoele.adb		20090519112630 49ef69d7
+D s-stratt.ads		20090519112631 fef7c1da
+D s-traent.ads		20090519112649 a66ef260
+D s-unstyp.ads		20090519112650 c0f9fae5
+D s-wchcon.ads		20090519112659 30c48dc1
+D test_addition.adb	20111029131933 61be5142
+X 1 ada.ads
+16K9*Ada 19e8 32|1r6 1r19 2r5 2r19
+X 5 a-inteio.ads
+18K13*Integer_Text_IO[10|48] 32|1w23 2r23
+X 9 a-textio.ads
+51K13*Text_IO 509e16 32|1w10 2r9
+266U14*Put_Line 32|13r3 15r3
+X 14 matrice.ads
+1K9*Matrice 56e12 32|1w40 2r40
+24R6*Une_Matrice_Entiere 27e11 32|5r7 6r7 7r7
+38U11*Initialiser 32|10r3 11r3
+44U11*Afficher_liste 32|12r3 14r3 17r3
+47V10*"+"{24R6} 32|16r10
+X 32 test_addition.adb
+4U11*Test_addition 4b11 18l5 18t18
+5r3 A{14|24R6} 10m15 12r18 16r8
+6r3 B{14|24R6} 11m15 14r18 16r12
+7r3 C{14|24R6} 16m3 17r18
+

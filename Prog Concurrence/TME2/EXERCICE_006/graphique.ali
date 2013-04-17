@@ -1,0 +1,76 @@
+V "GNAT Lib v2009"
+P ZX
+R nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnvnnnnnnnnnnnnnnn
+
+U graphique%b		graphique.adb		6f531826 NE OO PK
+W system%s		system.ads		system.ali
+W system.concat_2%s	s-conca2.adb		s-conca2.ali
+
+U graphique%s		graphique.ads		ffc6becc EE NE OO PK
+
+D graphique.ads		20110907133710 ffc6becc
+D graphique.adb		20110907133710 136033ea
+D system.ads		20090519112725 83f59500
+D s-conca2.ads		20090519112533 3d28f3da
+X 1 graphique.ads
+2K9*Graphique 24l5 24e14 2|4b14 82l5 82t14
+5U19*Creer_Fenetre 5>34 6>30 7>30 8>30 2|9b19 25l13 25t26
+5i34 Width{natural} 2|9b34 24r45
+6i30 Height{natural} 2|10b54 24r65
+7s30 Bg_Color{string} 2|11b58 18r35 18r59 22r26 22r50
+8s30 Fg_Color{string} 2|12b58 19r35 19r59 23r26 23r50
+11U19*Remplir_Fenetre 2|27b19 34l13 34t28
+14U19*Attendre_Fermeture_Fenetre 2|37b19 44l13 44t39
+17U19*Afficher_Point 17>35 17>38 2|46b19 53l13 53t27
+17i35 X{natural} 2|46b35 52r53
+17i38 Y{natural} 2|46b38 52r69
+18U19*Afficher_Point_Rapide 18>42 18>45 2|55b19 62l13 62t34
+18i42 X{natural} 2|55b42 61r59
+18i45 Y{natural} 2|55b45 61r75
+21U19*Afficher_Ligne 21>35 21>39 21>43 21>47 2|64b19 71l13 71t27
+21i35 X1{natural} 2|64b35 70r53
+21i39 Y1{natural} 2|64b39 70r70
+21i43 X2{natural} 2|64b43 70r87
+21i47 Y2{natural} 2|64b47 70r104
+22U19*Afficher_Ligne_Rapide 22>42 22>46 22>50 22>54 2|73b19 80l13 80t34
+22i42 X1{natural} 2|73b42 79r60
+22i46 Y1{natural} 2|73b46 79r77
+22i50 X2{natural} 2|73b50 79r94
+22i54 Y2{natural} 2|73b54 79r111
+X 2 graphique.adb
+6I14 Os_Unsigned<long_long_integer> 7r13 14r52 24r32 24r53 48r61 52r41 52r57
+. 57r68 61r47 61r63 66r71 70r41 70r58 70r75 70r92 75r78 79r48 79r65 79r82
+. 79r99
+14U27*Creer_Fenetre 14>42 14>45 15>66 15>71 16b<c,creer_fenetre>35 24r17
+14i42 W{6I14}
+14i45 H{6I14}
+15m66 Bgc{3|67M9}
+15m71 Fgc{3|67M9}
+18a17 Bgc{string} 22m17 24m74
+19a17 Fgc{string} 23m17 24m87
+29U27*Remplir_Fenetre_Interne 30b<c,effacer_fenetre>35 33r17
+39U27*Attendre_Fermeture_Fenetre_Interne 40b<c,attendre_fermeture_fenetre>35
+. 43r17
+48U27*Afficher_Point_Interne 48>51 48>54 49b<c,afficher_point>35 52r17
+48i51 X{6I14}
+48i54 Y{6I14}
+57U27*Afficher_Point_Rapide_Interne 57>58 57>61 58b<c,afficher_point_rapide>35
+. 61r17
+57i58 X{6I14}
+57i61 Y{6I14}
+66U27*Afficher_Ligne_Interne 66>51 66>55 66>59 66>63 67b<c,afficher_ligne>35
+. 70r17
+66i51 X1{6I14}
+66i55 Y1{6I14}
+66i59 X2{6I14}
+66i63 Y2{6I14}
+75U27*Afficher_Ligne_Rapide_Interne 75>58 75>62 75>66 75>70 76b<c,afficher_ligne_rapide>35
+. 79r17
+75i58 X1{6I14}
+75i62 Y1{6I14}
+75i66 X2{6I14}
+75i70 Y2{6I14}
+X 3 system.ads
+40K9*System 2|1w6 2r5 15r80 3|156e11
+67M9*Address 2|15r87
+

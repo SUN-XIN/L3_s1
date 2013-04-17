@@ -1,0 +1,88 @@
+V "GNAT Lib v2009"
+M P W=b
+P SS ZX
+R nnnvnnnnnnnnnnnvnnvnnnvnnvnnvnnnnnnnnnnvnvnnvnvnvvnnnnnvnnnnnnnnnnv2nv1nv1+nnnnnn
+
+U erato%b		erato.adb		dd9ba82a NE OO SU IL
+W ada%s			ada.ads			ada.ali
+W ada.real_time%s	a-reatim.adb		a-reatim.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W system%s		system.ads		system.ali
+W system.concat_3%s	s-conca3.adb		s-conca3.ali
+W system.concat_4%s	s-conca4.adb		s-conca4.ali
+W system.img_int%s	s-imgint.adb		s-imgint.ali
+W system.parameters%s	s-parame.adb		s-parame.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+W system.task_info%s	s-tasinf.adb		s-tasinf.ali
+W system.tasking%s	s-taskin.adb		s-taskin.ali
+W system.tasking.rendezvous%s  s-tasren.adb	s-tasren.ali
+W system.tasking.stages%s  s-tassta.adb		s-tassta.ali
+
+D ada.ads		20090519112355 9c7dd3ea
+D a-except.ads		20090519112305 b54b55de
+D a-finali.ads		20090519112309 bfd2ca79
+D a-filico.ads		20090519112308 4ff02a40
+D a-ioexce.ads		20090519112311 be0900a0
+D a-reatim.ads		20090519112319 7c462ab4
+D a-stream.ads		20090519112324 34aca5be
+D a-tags.ads		20090519112335 bfa07446
+D a-textio.ads		20090519112337 fe8af46e
+D a-unccon.ads		20090519112342 51e09df2
+D erato.adb		20111129130528 23115c44
+D interfac.ads		20090519112459 a69cad5c
+D i-c.ads		20090519112452 bc3ef662
+D i-cstrea.ads		20090519112454 e1e064a9
+D system.ads		20090519112725 83f59500
+D s-atacco.ads		20090519112525 60789a20
+D s-conca3.ads		20090519112533 a208bec3
+D s-conca4.ads		20090519112533 4d10618f
+D s-crtl.ads		20090519112535 89a96a96
+D s-exctab.ads		20090519112537 4b7fd51d
+D s-ficobl.ads		20090519112540 8bb681e5
+D s-finimp.ads		20090519112541 90fd9896
+D s-finroo.ads		20090519112541 1408f9d1
+D s-imgint.ads		20090519112547 f77d133c
+D s-linux.ads		20090519112554 ad070dbe
+D s-osinte.ads		20090519112558 9854f6ef
+D s-parame.ads		20090519112621 f32e56e9
+D s-secsta.ads		20090519112625 d2c357fb
+D s-soflin.ads		20090519112627 61e5c9e8
+D s-stache.ads		20090519112629 481f9e9d
+D s-stausa.ads		20090519112629 146a8ff1
+D s-stalib.ads		20090519112629 9cbc334a
+D s-stoele.ads		20090519112630 a4d57c26
+D s-stoele.adb		20090519112630 49ef69d7
+D s-stratt.ads		20090519112631 fef7c1da
+D s-tasinf.ads		20090519112639 268f0cd4
+D s-taspri.ads		20090519112642 5459bcd0
+D s-taprop.ads		20090519112637 25a7965c
+D s-taskin.ads		20090519112641 78c4deed
+D s-taprob.ads		20090519112635 5e00115c
+D s-tpoben.ads		20090519112646 18aadfe3
+D s-tasren.ads		20090519112643 5bda31d2
+D s-tassta.ads		20090519112643 71d2b71d
+D s-traent.ads		20090519112649 a66ef260
+D s-unstyp.ads		20090519112650 c0f9fae5
+D s-wchcon.ads		20090519112659 30c48dc1
+X 1 ada.ads
+16K9*Ada 19e8 11|4r6 5r5
+X 9 a-textio.ads
+51K13*Text_IO 509e16 11|4w10 5r9
+266U14*Put_Line 11|26r9 32r25
+X 11 erato.adb
+7U11*erato 7b11 54l5 54t10
+8T13 filtre 8d20 10l7 10e13 12r27 17r24 21b13 46l7 46t13 48r9
+8i20 NP{natural} 26r39 32r91 33r39
+9Y11 a_filtrer 9>21 29b32 31l29 31t38 38r50 52r11
+9i21 num{natural} 30r42
+12P8 A_filtre(8T13) 14r53 15r19 22r12
+14V12 cree_nouveau_filtre{12P8} 14b12 14>32 19l7 19t26 35r49
+14i32 NP{natural} 17r31
+15p9 Premier{12P8} 17m9 18r16
+22p5 suiv{12P8} 34r37 35m41 38r41
+23i5 p_num{natural} 30m33 32r60 33r29 35r69 38r60
+29i42 num{natural}
+48t1 prems{8T13} 52r5
+51i7 i{integer} 52r21
+

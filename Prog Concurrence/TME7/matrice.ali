@@ -1,0 +1,142 @@
+V "GNAT Lib v2009"
+P SS ZX
+R nnnvnnnnnnnnnnnnnnnnnnvvnnvnvnnnnnnnnnvnnvnnnnnnnnnnvnnvnnnnnnnnnnnnnnnnnnnnn
+
+U matrice%b		matrice.adb		f67531db NE OO PK
+W ada%s			ada.ads			ada.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W interfaces%s		interfac.ads		interfac.ali
+W system.concat_4%s	s-conca4.adb		s-conca4.ali
+W system.img_int%s	s-imgint.adb		s-imgint.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+W unchecked_deallocation%s
+
+U matrice%s		matrice.ads		e1955fe6 EE NE OO PK
+
+D ada.ads		20090519112355 9c7dd3ea
+D a-except.ads		20090519112305 b54b55de
+D a-finali.ads		20090519112309 bfd2ca79
+D a-filico.ads		20090519112308 4ff02a40
+D a-inteio.ads		20090519112309 03bc737c
+D a-ioexce.ads		20090519112311 be0900a0
+D a-stream.ads		20090519112324 34aca5be
+D a-tags.ads		20090519112335 bfa07446
+D a-textio.ads		20090519112337 fe8af46e
+D a-tiinio.ads		20090519112341 949a7272
+D a-unccon.ads		20090519112342 51e09df2
+D interfac.ads		20090519112459 a69cad5c
+D i-cstrea.ads		20090519112454 e1e064a9
+D matrice.ads		20111029131934 e1955fe6
+D matrice.adb		20111103155100 8c611406
+D system.ads		20090519112725 83f59500
+D s-conca4.ads		20090519112533 4d10618f
+D s-crtl.ads		20090519112535 89a96a96
+D s-exctab.ads		20090519112537 4b7fd51d
+D s-ficobl.ads		20090519112540 8bb681e5
+D s-finimp.ads		20090519112541 90fd9896
+D s-finroo.ads		20090519112541 1408f9d1
+D s-imgint.ads		20090519112547 f77d133c
+D s-parame.ads		20090519112621 f32e56e9
+D s-secsta.ads		20090519112625 d2c357fb
+D s-soflin.ads		20090519112627 61e5c9e8
+D s-stache.ads		20090519112629 481f9e9d
+D s-stalib.ads		20090519112629 9cbc334a
+D s-stoele.ads		20090519112630 a4d57c26
+D s-stoele.adb		20090519112630 49ef69d7
+D s-stratt.ads		20090519112631 fef7c1da
+D s-traent.ads		20090519112649 a66ef260
+D s-unstyp.ads		20090519112650 c0f9fae5
+D s-wchcon.ads		20090519112659 30c48dc1
+D unchdeal.ads		20090519112734 66b7fd29
+X 1 ada.ads
+16K9*Ada 19e8 15|4r7 4r20 5r6 5r19
+X 5 a-inteio.ads
+18K13*Integer_Text_IO[10|48] 15|4w24 5r23
+X 9 a-textio.ads
+51K13*Text_IO 509e16 15|4w11 5r10
+76I12*Field{integer}
+169U14*New_Line 15|134r5 136r3 145r5 147r3
+266U14*Put_Line 15|114r7
+X 10 a-tiinio.ads
+58U14*Get 15|115r7[5|18]
+68U14*Put 15|128r13[5|18] 131r13[5|18] 143r13[5|18]
+70i7 Width{9|76I12} 15|128r33[5|18] 131r20[5|18] 143r38[5|18]
+X 14 matrice.ads
+1K9*Matrice 56l5 56e12 15|6b14 150l5 150t12
+3R6*Un_Element_De_Liste 5r37 11c6 16e11 15|9r53 48r52 50r50
+5P6*Ptr_Element_De_Liste(3R6) 13r14 19r46 15|9r73 14r18 30r20 122r7
+13p3*Prochain{5P6} 15|17r38 36r32 41r56 43m34 43r54 50m34 129r28
+14i3*Colonne{positive} 15|16r22 19r19 34r47 127r44
+15i3*Donnee{integer} 15|20r31 128r25
+19A6*Tab_Ptr(5P6)<integer> 26r10
+24R6*Une_Matrice_Entiere 24d26 24d34 27e11 30r31 33r35 38r40 41r33 44r39
+. 47r38 47r66 50r28 50r79 51r51 51r79 54r38 54r66 15|11r28 26r35 56r35 57r52
+. 58r28 68r25 69r41 70r28 81r25 81r53 82r28 92r35 93r53 94r28 109r39 121r39
+. 139r33
+24i26*Lignes{positive} 26r21 15|58r67 60r30 70r66 72r29 82r66 84r29 94r67
+. 97r30 112r23 124r25 141r25
+24i34*Colonnes{positive} 15|58r96 61r38 70r94 73r37 82r94 85r37 94r96 98r38
+. 100r46 113r25 126r27 142r27
+26a3*Tete{19A6} 15|14r50 33r24 41m33 48m33 48r81 125r24
+30V11*Valeur{integer} 30>18 30>52 30>73 15|11b11 24l5 24t11 62r53 62r74 74r62
+. 86r62 101r46 101r69 143r17
+30r18 Matrice{24R6} 15|11b18 14r42
+30i52 Ligne{positive} 15|12b18 14r55
+30i73 Colonne{positive} 15|13b18 16r32 19r29
+33U11*Valeur 33=18 33>56 33>77 34>18 15|26b11 53l5 53t11 62r25 74r25 86r25
+. 103r25 116r7
+33r18 Matrice{24R6} 15|26b18 33r16 41m25 48m25 48r73
+33i56 Ligne{positive} 15|27b18 33r29 41r38 48r38 48r86
+33i77 Colonne{positive} 15|28b18 34r57 40r20 47r20 48r93 50r75
+34i18 Valeur{integer} 15|29b18 39r13 48r101 50r83
+38U11*Initialiser 38=23 15|109b11 119l5 119t16
+38r23 Matrice{24R6} 15|109b23 112r15 113r17 116m14
+41U11*Afficher 41>20 15|139b11 148l5 148t13
+41r20 Matrice{24R6} 15|139b20 141r17 142r19 143r24
+44U11*Afficher_liste 44>26 15|121b11 137l5 137t19
+44r26 Matrice{24R6} 15|121b26 124r17 125r16 126r19
+47V10*"+"{24R6} 47>14 47>24 15|56b10 66l5 66t8
+47r14 Matrice1{24R6} 15|56b14 58r58 58r87 60r21 61r29 62r60
+47r24 Matrice2{24R6} 15|56b24 62r81
+50V10*"*"{24R6} 50>14 50>49 15|68b10 78l5 78t8
+50r14 Matrice{24R6} 15|68b14 70r58 70r86 72r21 73r29 74r69
+50i49 Scalaire{integer} 15|69b14 74r53
+51V10*"*"{24R6} 51>14 51>37 15|80b10 90l5 90t8
+51i14 Scalaire{integer} 15|80b14 86r53
+51r37 Matrice{24R6} 15|81b14 82r58 82r86 84r21 85r29 86r69
+54V10*"*"{24R6} 54>14 54>24 15|92b10 107l5 107t8
+54r14 Matrice1{24R6} 15|92b14 94r58 97r21 100r37 101r53
+54r24 Matrice2{24R6} 15|92b24 94r87 98r29 101r76
+X 15 matrice.adb
+9U11 Desallouer[35|20] 45r17
+14p9 r_tete{14|5P6} 16r15 17m17 17r27 19r12 20r24
+30p9 pred{14|5P6} 35m17 43r25 50r25
+30p14 ptr{14|5P6} 33m9 34r16 34r39 35r25 36m17 36r24 41r48 43r46 45m28 50r71
+31i9 val{integer} 39r35
+58r9 Matrice_Resultat{14|24R6} 62m32 65r16
+60i13 I{integer} 62r49 62r69 62r90
+61i21 J{integer} 62r51 62r71 62r92
+70r9 Matrice_Resultat{14|24R6} 74m32 77r16
+72i13 I{integer} 74r49 74r77
+73i21 J{integer} 74r51 74r79
+82r9 Matrice_Resultat{14|24R6} 86m32 89r16
+84i13 I{integer} 86r49 86r77
+85i21 J{integer} 86r51 86r79
+94r9 Matrice_Resultat{14|24R6} 103m32 106r16
+95i9 val{integer} 99m25 101m33 101r40 103r53
+97i13 I{integer} 101r62 103r49
+98i21 J{integer} 101r87 103r51
+100i29 K{integer} 101r64 101r85
+110i1 val{integer} 115m11 116r29
+112i7 I{integer} 114r55 116r23
+113i9 J{integer} 114r81 116r26
+122p1 ptr{14|5P6} 125m9 127r13 127r36 128r17 129m13 129r20
+124i7 I{integer} 125r29
+126i9 J{integer} 127r54
+141i7 I{integer} 143r32
+142i9 J{integer} 143r34
+X 35 unchdeal.ads
+20u11*Unchecked_Deallocation 15|4w41 9r29
+

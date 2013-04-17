@@ -1,0 +1,119 @@
+V "GNAT Lib v2009"
+M P W=b
+P SS ZX
+R nnnvnnnnnnnnnnnvnnvnvvvnnvnnvnnnnnnnnnvvnvnnvnvnvnvnnnnvnvvnnnnnnnv2nv3nv1+nnnnnn
+
+U anneau_min%b		anneau_min.adb		46941a23 NE OO SU IL
+W ada%s			ada.ads			ada.ali
+W ada.calendar%s	a-calend.adb		a-calend.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.numerics.discrete_random%s
+W ada.real_time%s	a-reatim.adb		a-reatim.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W interfaces%s		interfac.ads		interfac.ali
+W system%s		system.ads		system.ali
+W system.arith_64%s	s-arit64.adb		s-arit64.ali
+W system.concat_2%s	s-conca2.adb		s-conca2.ali
+W system.concat_5%s	s-conca5.adb		s-conca5.ali
+W system.img_int%s	s-imgint.adb		s-imgint.ali
+W system.parameters%s	s-parame.adb		s-parame.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+W system.task_info%s	s-tasinf.adb		s-tasinf.ali
+W system.tasking%s	s-taskin.adb		s-taskin.ali
+W system.tasking.rendezvous%s  s-tasren.adb	s-tasren.ali
+W system.tasking.stages%s  s-tassta.adb		s-tassta.ali
+W system.val_int%s	s-valint.adb		s-valint.ali
+
+D ada.ads		20090519112355 9c7dd3ea
+D a-calend.ads		20090519112250 19486c30
+D a-except.ads		20090519112305 b54b55de
+D a-finali.ads		20090519112309 bfd2ca79
+D a-filico.ads		20090519112308 4ff02a40
+D a-ioexce.ads		20090519112311 be0900a0
+D a-numeri.ads		20090519112318 1cf3e608
+D a-nudira.ads		20090519112317 56734efa
+D a-nudira.adb		20090519112317 bde16134
+D a-reatim.ads		20090519112319 7c462ab4
+D a-stream.ads		20090519112324 34aca5be
+D a-tags.ads		20090519112335 bfa07446
+D a-textio.ads		20090519112337 fe8af46e
+D a-unccon.ads		20090519112342 51e09df2
+D anneau_min.adb	20111129181528 ee6da0b7
+D interfac.ads		20090519112459 a69cad5c
+D i-c.ads		20090519112452 bc3ef662
+D i-cstrea.ads		20090519112454 e1e064a9
+D system.ads		20090519112725 83f59500
+D s-atacco.ads		20090519112525 60789a20
+D s-arit64.ads		20090519112524 ded5f422
+D s-conca2.ads		20090519112533 3d28f3da
+D s-conca5.ads		20090519112534 e435dfcb
+D s-crtl.ads		20090519112535 89a96a96
+D s-exctab.ads		20090519112537 4b7fd51d
+D s-ficobl.ads		20090519112540 8bb681e5
+D s-finimp.ads		20090519112541 90fd9896
+D s-finroo.ads		20090519112541 1408f9d1
+D s-imgint.ads		20090519112547 f77d133c
+D s-linux.ads		20090519112554 ad070dbe
+D s-osinte.ads		20090519112558 9854f6ef
+D s-parame.ads		20090519112621 f32e56e9
+D s-secsta.ads		20090519112625 d2c357fb
+D s-soflin.ads		20090519112627 61e5c9e8
+D s-stache.ads		20090519112629 481f9e9d
+D s-stausa.ads		20090519112629 146a8ff1
+D s-stalib.ads		20090519112629 9cbc334a
+D s-stoele.ads		20090519112630 a4d57c26
+D s-stoele.adb		20090519112630 49ef69d7
+D s-stratt.ads		20090519112631 fef7c1da
+D s-tasinf.ads		20090519112639 268f0cd4
+D s-taspri.ads		20090519112642 5459bcd0
+D s-taprop.ads		20090519112637 25a7965c
+D s-taskin.ads		20090519112641 78c4deed
+D s-taprob.ads		20090519112635 5e00115c
+D s-tpoben.ads		20090519112646 18aadfe3
+D s-tasren.ads		20090519112643 5bda31d2
+D s-tassta.ads		20090519112643 71d2b71d
+D s-traent.ads		20090519112649 a66ef260
+D s-unstyp.ads		20090519112650 c0f9fae5
+D s-valint.ads		20090519112653 d23209d2
+D s-wchcon.ads		20090519112659 30c48dc1
+X 1 ada.ads
+16K9*Ada 19e8 15|1r6 1r19 2r5 33r31
+X 7 a-numeri.ads
+16K13*Numerics 32e17 15|1r23 33r35
+X 8 a-nudira.ads
+53k22*Discrete_Random 117e33 15|1w32 33r44
+66R9 Generator 15|35r7[33]
+68V13 Random{integer} 15|42r8[33] 47r10[33]
+70U14 Reset 15|41r3[33]
+X 13 a-textio.ads
+51K13*Text_IO 509e16 15|1w10 2r9
+266U14*Put_Line 15|43r3 48r5 54r3 57r5 79r5 82r7
+X 15 anneau_min.adb
+4U11*anneau_min 4b11 99l5 99t15
+6i1 NBSITE{positive} 46r15
+8T6 tache 9r26 44r18 49r16
+9P6 acc_tache(8T6) 13r25 36r13 37r10 38r9 70r13 73r25
+11T11 tache 11d17 24l5 24e10 69b11 95l5 95t10
+11i17 Valeur{natural} 71r24 80r26 88r16
+13Y9 init 13>15 50r14 53r11 73b10 75l7 75t11
+13p15 succ{9P6} 74r16
+19Y9 recevoir 19>18 80r17 81b12 83l9 83t17 86b12 91l9 91t17 92r17
+19i18 mes{natural} 82r43 88r10 89r20
+23Y9 calcul_Min 55r15 58r13 78b12
+26t6 Creer_Anneau 32b11 67l5 67t17 84r5
+29Y9 fin_calcul 56b10 59l7 59t17 84r18
+33K9 Random_Natural[8|53] 34r7
+35r3 G{8|66R9[33]} 41r9 42r15 47r17
+36p3 premier{9P6} 44m3 45r11 53r16 55r3
+37p3 curr{9P6} 45m3 50r5 51m5
+38p3 suc{9P6} 49m5 50r19 51r13 53r3 58r5
+39i3 n{natural} 42m3 43r41 44r24 47m5 48r43 49r22
+46i7 I{integer}
+70p3 suivant{9P6} 74m5 80r5 92r5
+71i3 min_loc{natural} 89m9 92r26
+73p15 succ{9P6}
+81i21 mes{natural}
+86i21 mes{natural}
+

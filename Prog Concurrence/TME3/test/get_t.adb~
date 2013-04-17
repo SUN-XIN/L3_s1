@@ -1,0 +1,10 @@
+with Ada.Text_IO, Ada.Integer_Text_IO; 
+use Ada.Text_IO, Ada.Integer_Text_IO;
+
+
+procedure get_t is
+num : integer;
+begin
+	get(num);
+	put("le num = "&Integer'Image(num));
+end get_t;    

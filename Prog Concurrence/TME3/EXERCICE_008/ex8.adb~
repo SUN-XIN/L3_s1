@@ -1,0 +1,52 @@
+with ada.text_io;
+use ada.text_io;
+
+procedure multi_Prod_Cons is
+	Dimension : constant Positive := 3;
+	type Tab_buffer is
+		array(Positive range<>,Positive range<>) of integer;
+	type T-stocke(taille:Positive) is record
+		nb_cases: natural := 0;
+		Tab:Tab_buffer(1..taille,1..2);
+	end record;
+	stock : T-stock(Dimension);
+
+	task Produc;
+	task body Produc is
+	num,id: integer;
+	begin
+		for I in 1..Dimension loop
+			put_line("Saissiez le Numéro que vous voulez déposer :");
+			get(num);			
+			put_line("Saissiez son identité :");
+			get(id);
+			stock.nb_cases := stock.nb_cases + 1;
+			stock.Tab(stock.nb_cases,1) := id;
+			stock.Tab(stock.nb_cases,2) := id;		
+		end loop;
+	end Produc;
+
+	task Consom;
+	task body Consom is
+	id: integer;
+	begin
+		for I in i..Dimension loop
+			put_line("Saissiez l'identité que vous voulez retraiter :");
+			get(id);
+			for I in 1..stock.nb_cases loop
+				if stock.Tab(I,1) == id then 
+					if stock.Tab(I,2) == null then
+						put_line("Il a déjà été retraité, resaissiez l'identité :");
+					else 
+						put_line("La donnée dont numéro "&natural'image(stock.nb_cases(I,2))&" est retraité.");
+						stock.nb_cases := stock.nb_cases - 1;
+						stock.Tab(I,2) := null;
+					end if;
+				end if;
+			end loop;
+		end loop;
+	end Consom;
+
+end multi_Prod_Cons;	 
+	
+

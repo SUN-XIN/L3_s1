@@ -1,0 +1,51 @@
+--LI317 Prc TME3 Exercice_8
+--Fait par binome : SUN Xin & YUAN Xiao
+
+with ada.Text_IO;
+use ada.Text_IO;
+
+PROCEDURE Multi_Prod_Cons IS
+   Dimension : CONSTANT Positive:=5;
+      TYPE Tab_Buffer IS ARRAY(Positive RANGE<>) OF Integer;
+      TYPE T_Stock(Taille:Positive) IS RECORD
+               Nb_Cases:Natural:=0;
+               Tab:Tab_Buffer(1..Taille);
+               Tab_ID:Tab_Buffer(1..Taille);
+    END RECORD;
+    Stock:T_Stock(Dimension);
+      TASK TYPE Produc(Id,Val:Integer);  
+      TASK TYPE Conso(Id:Integer); 
+   TASK BODY Produc IS
+   BEGIN
+         Stock.Nb_Cases:=Stock.Nb_Cases+1;
+         Stock.Tab_Id(id):=id;
+            Stock.Tab(Stock.Tab_Id(Id)):=Val;
+            Put_Line("Depot du message"&Integer'Image(Stock.Tab(Stock.Tab_Id(Id)))&"  dans la case"&Natural'Image(Stock.Tab_Id(Id))& " (Stock.Nb_Elements =" & Natural'Image(Stock.Nb_Cases) & ")");
+   END Produc;
+
+   TASK BODY Conso IS
+      x:Integer;
+   BEGIN 
+           	for I in 1..stock.nb_cases loop
+		delay 0.5;
+		x := Stock.Tab(Stock.tab_id(id));
+		Stock.Nb_cases := Stock.Nb_cases - 1;
+               Put_Line("Retrait du message"&Integer'Image(X)&"  dans la case"&Natural'Image(Stock.Tab_Id(Id)) &" (Stock.Nb_Elements =" & Natural'Image(Stock.Nb_Cases) & ")");
+	end loop;
+   END Conso;
+         BEGIN
+      DECLARE
+              
+       T1:Produc(1,111);
+       T2:Produc(2,222);
+       T3:Produc(3,333);
+       T4:Conso(1);
+       T5:Conso(2);
+       T6:Conso(3);
+       BEGIN
+          NULL;
+      END;
+       NULL;                  
+end multi_Prod_Cons;	 
+	
+
